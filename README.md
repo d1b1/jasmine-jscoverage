@@ -2,12 +2,12 @@ This repo contains a working Jasmine + JSCoverage example. It will run as is wit
 
 ## Installation
 
-   git clone git@github.com:d1b1/jasmine-jscoverage.git
-   npm install
+    git clone git@github.com:d1b1/jasmine-jscoverage.git
+    npm install
 
 ## Usage
 
-node cover.js <jasmine-node spec>
+    node cover.js <jasmine-node spec>
 
 1. cover.js is the wrapper for the jasmine CLI calls.
 2. spec is the name of the folder containing all the calls.
