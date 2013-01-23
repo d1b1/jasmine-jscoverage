@@ -15,13 +15,15 @@ var jasmineEnv = jasmine.getEnv();
 
 // Define the end event.
 process.on('exit', function () {
-  console.log('Process Complete.')
+
+  console.log('Process Complete.');
 
   // Comment if not needed. This will dump the 
   // coverage report for any file called by the jsc.require()
   // calls.
-  
+
   jsc.coverage(); // print summary info, cover percent
+
   // UnComment the following to show 
   // the uncovered code 
 
@@ -33,7 +35,6 @@ process.on('exit', function () {
 // the reports output.
 
 jasmineEnv.addReporter(new jasmine.JSCoverageReporter('./reports'));
-
 
 // Now require the jasmine-node CLI.
 require('./node_modules/jasmine-node/lib/jasmine-node/cli.js');

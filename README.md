@@ -1,4 +1,5 @@
-This repo contains a working Jasmine + JSCoverage example. It will run as is without any problems. 
+This repo contains a working Jasmine + JSCoverage example. It will run as is without any problems. This code contains the jasmine UI as well to provide better visiblity into the spec(s) provided. To view the UI, see the section on UI. The pattern used in the src.js file and in the spec files allows the same code to run in both the browser and in node. This provides two ways to use any given spec; first for visual testing and spec development, second in CI process to collection overall code testing stats.
+
 
 ## Installation
 
@@ -12,3 +13,35 @@ This repo contains a working Jasmine + JSCoverage example. It will run as is wit
 1. cover.js is the wrapper for the jasmine CLI calls.
 2. spec is the name of the folder containing all the calls.
 2. add other jasmine-node parameters, --junitreport etc after the spec folder.
+
+## Customize
+The following are notes on how you can customize the sample code for different usages.
+
+1. in the cover.js you can edit and set the 'reports' folder. If you do not want the coverage report, then comment the call to jasmine-reporter calls.
+
+## Sample Output
+When the following command is called from the command line, you will see the jasmine output as well as the JSCOVERAGE data. JSCoverage uses the file path as the index for coverage statistics. Following the filename you will see the percentage of the file covered by the spec file you wrote. 
+
+    ......
+
+    Finished in 0.01 seconds
+    6 tests, 6 assertions, 0 failures
+
+
+    Process Complete.
+    [JSCOVERAGE] /Users/steve/Dropbox/github/jasmine-jscoverage/src.js:75.00%
+
+## Jasmine UI
+To view the report in the browser, use the following to launch the jasmine UI.
+
+    servedir .
+
+## Notes
+There is a lot of room for improvement on both the sample and the implimentation of the jscoverage node package. Below is a first guess on the next steps.
+
+1. Updated the jscoverage key to use the function file name only and or filename + function name. 
+1. Extract the coverage report data into a better json report.
+1. Provide codebase wide rollup report and UI.
+
+## Reference
+http://caolanmcmahon.com/posts/writing_for_node_and_the_browser/

@@ -2,10 +2,12 @@
 // to run the injection calls into the codebase before the Jasmine
 // tests are executed.
 
-var jsc = require('jscoverage');
+if (typeof module !== 'undefined' && module.exports) {
+  var jsc  = require('jscoverage');
+  var util = jsc.require(module, '../src.js');
+}
 
 // Ok, get the actual source code.
-var util = jsc.require(module, '../src.js');
 
 describe('pad', function() {
 
