@@ -1,5 +1,8 @@
 This repo contains a working Jasmine + JSCoverage example. It will run as is without any problems. This code contains the jasmine UI as well to provide better visiblity into the spec(s) provided. To view the UI, see the section on UI. The pattern used in the src.js file and in the spec files allows the same code to run in both the browser and in node. This provides two ways to use any given spec; first for visual testing and spec development, second in CI process to collection overall code testing stats.
 
+Note this example used the jscoverage pattern of 'instrumenting code', but does not use the actual [jscoverage](http://siliconforks.com/jscoverage/) install or newer jar file. 'Instrumenting' basically injects code into a copy of all the files in a codebase, which allows the jscoverage to monitor what lines are run. 
+
+This solution is based upon the work done in node by fishbar - https://github.com/fishbar/jscoverage
 
 ## Installation
 
