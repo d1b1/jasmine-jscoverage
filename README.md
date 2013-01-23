@@ -44,4 +44,7 @@ There is a lot of room for improvement on both the sample and the implimentation
 1. Provide codebase wide rollup report and UI.
 
 ## Reference
-http://caolanmcmahon.com/posts/writing_for_node_and_the_browser/
+Getting the patterns straight for js code that will run in both enviroments takes a bit of research. Below are several articles the helped moved this along.
+
+# http://caolanmcmahon.com/posts/writing_for_node_and_the_browser/
+# http://stackoverflow.com/questions/3225251/how-can-i-share-code-between-node-js-and-the-browser
