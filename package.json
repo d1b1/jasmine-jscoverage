@@ -1,5 +1,5 @@
 {
-  "name": "jasmine+jscoverage",
+  "name": "jasmine_jscoverage",
   "version": "0.0.1",
   "description": "Implimentation of Jamsmine and JSCoverage with working tests for node and browser.",
   "engines": {
