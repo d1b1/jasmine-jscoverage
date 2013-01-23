@@ -1,8 +1,9 @@
 This repo contains a working Jasmine + JSCoverage example. It will run as is without any problems. 
 
 ## Installation
-1. Clone the repo to your machine.
-1. npm install
+
+   git clone git@github.com:d1b1/jasmine-jscoverage.git
+   npm install
 
 ## Usage
 
