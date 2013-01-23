@@ -1,14 +1,16 @@
 {
   "name": "jasmine+jscoverage",
   "version": "0.0.1",
-  "description": "Implimentation of Jamsmine and JSCoverage with working tests.",
+  "description": "Implimentation of Jamsmine and JSCoverage with working tests for node and browser.",
   "engines": {
-    "node": ">=0.8"
+    "node": ">=0.8",
+    "npm": "1.1.9"
   },
   "dependencies": {
     "jscoverage": "~0.3.4",
     "jasmine-node": "~1.0.28",
-    "jscoverage-reporter": "~0.1.0"
+    "jscoverage-reporter": "~0.1.0",
+    "express": "~3.0.6"
   },
   "repository": {
     "type": "git",
@@ -19,8 +21,8 @@
     "node",
     "javascript",
     "coverage",
-    "dev",
-    "tool"
+    "jasmine",
+    "jasmine-node"
   ],
   "author": "d1b1 <stephan.smith.bc93@gmail.com>",
   "license": "MIT"
