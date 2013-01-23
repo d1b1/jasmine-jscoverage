@@ -4,6 +4,11 @@ Note this example used the jscoverage pattern of 'instrumenting code', but does 
 
 This solution is based upon the work done in node by fishbar - https://github.com/fishbar/jscoverage
 
+## Demo
+This demo is hosted on heroku. Barebones. It will get a bit more love in a bit.
+
+[demo](http://jasmine-jscoverage.herokuapp.com)
+
 ## Installation
 
     git clone git@github.com:d1b1/jasmine-jscoverage.git
