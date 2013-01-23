@@ -7,8 +7,13 @@ This repo contains a working Jasmine + JSCoverage example. It will run as is wit
     npm install
 
 ## Usage
+General Usage:
 
     node cover.js <jasmine-node spec>
+
+Working Example:
+
+    node cover.js jasmine-node spec 
 
 1. cover.js is the wrapper for the jasmine CLI calls.
 2. spec is the name of the folder containing all the calls.
@@ -35,6 +40,7 @@ When the following command is called from the command line, you will see the jas
 To view the report in the browser, use the following to launch the jasmine UI.
 
     servedir .
+    http://localhost:8000/runner.html
 
 ## Notes
 There is a lot of room for improvement on both the sample and the implimentation of the jscoverage node package. Below is a first guess on the next steps.
@@ -43,8 +49,14 @@ There is a lot of room for improvement on both the sample and the implimentation
 1. Extract the coverage report data into a better json report.
 1. Provide codebase wide rollup report and UI.
 
+## Whats Next
+The next step is to get the cover.js to do the following:
+
+* Generate a static coverage report. Mostly because how often do we really need the rollup numbers?
+* Generate a grunt.js task to use in provisioning.
+
 ## Reference
 Getting the patterns straight for js code that will run in both enviroments takes a bit of research. Below are several articles the helped moved this along.
 
-# http://caolanmcmahon.com/posts/writing_for_node_and_the_browser/
-# http://stackoverflow.com/questions/3225251/how-can-i-share-code-between-node-js-and-the-browser
+* http://caolanmcmahon.com/posts/writing_for_node_and_the_browser/
+* http://stackoverflow.com/questions/3225251/how-can-i-share-code-between-node-js-and-the-browser
