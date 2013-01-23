@@ -7,7 +7,7 @@ This solution is based upon the work done in node by fishbar - https://github.co
 ## Demo
 This demo is hosted on heroku. Barebones. It will get a bit more love in a bit.
 
-[demo](http://jasmine-jscoverage.herokuapp.com)
+[Demo Site](http://jasmine-jscoverage.herokuapp.com)
 
 ## Installation
 
