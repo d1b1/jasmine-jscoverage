@@ -10,7 +10,8 @@
     "jscoverage": "~0.3.4",
     "jasmine-node": "~1.0.28",
     "jscoverage-reporter": "~0.1.0",
-    "express": "~3.0.6"
+    "express": "~3.0.6",
+    "underscore": "~1.4.3"
   },
   "repository": {
     "type": "git",

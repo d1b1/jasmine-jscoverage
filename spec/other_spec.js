@@ -6,6 +6,7 @@
 if (typeof module !== 'undefined' && module.exports) {
   var jsc  = require('jscoverage');
   var util = jsc.require(module, '../src.js');
+  var util2 = jsc.require(module, '../src2.js');
 }
 
 // Ok, get the actual source code.
@@ -28,5 +29,25 @@ describe('simpleIncrement', function() {
 
   });
 
+});
+
+
+describe('simpleIncrement', function() {
+
+  // This checks that the pad function will
+  // pad both a string and an number which 
+  // are smaller then required length.
+
+  describe('pad to 3 characters', function() {
+
+    it('Increment by 1', function () {
+      expect( util2.simpleIncrement( 1 ) ).toBe( 2 );
+    });
+
+    it('Increment by 5', function () {
+      expect( util2.simpleIncrement( 5, 5 ) ).toBe( 10 );
+    });
+
+  });
 
 });
